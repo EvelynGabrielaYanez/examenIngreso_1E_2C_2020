@@ -14,9 +14,9 @@ c)la marca del más barato de los sólidos
   let vRespuesta;
   let vAcumPesoTotal = 0;
   let vMaxPrecioLiq = 0; //Inicializo en 0 pues se que no puede haber precios negativos
-  let vMaxPrecioLiqMarca = "No se ingreso";
+  let vMaxPrecioLiqMarca = "No se ingresaron líquidos";
   let vMinPrecioSol;
-  let vMinPrecioSolMarca = "No se ingreso";
+  let vMinPrecioSolMarca = "No se ingresaron sólidos";
   let vBanderaMin = false;
 
   do{
@@ -62,11 +62,11 @@ c)la marca del más barato de los sólidos
     }
 
 
-    vRespuesta = prompt("¿Desea continuar?");
+    vRespuesta = prompt("¿Desea continuar?(si/no)");
 
   }while(vRespuesta == "si")
 
 
-  alert("a)El peso total de la compra es de: " + vAcumPesoTotal + ".\nb)La marca del más caro de los líquidos es: " + vMaxPrecioLiqMarca +
-  ".\c)La marca del más barato de los sólidos es: " + vMinPrecioSolMarca);
+  alert("a)El peso total de la compra es de: " + vAcumPesoTotal + ".\nb)La marca del más cara de los líquidos es: " + vMaxPrecioLiqMarca +
+  ".\nc)La marca del más barata de los sólidos es: " + vMinPrecioSolMarca);
 }
